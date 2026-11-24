@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17609b">
+  <meta name="description" content="Lakshmi Sai Enterprises - Contact details, website and office locations.">
+  <title>Lakshmi Sai Enterprises | Contact & Links</title>
+  <style>
+    :root {
+      --blue: #17609b;
+      --blue-dark: #104d80;
+      --text: #252b33;
+      --muted: #777f89;
+      --line: #e5e7eb;
+      --surface: #fafafa;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 24px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f2f3f5;
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .page-card {
+      width: 100%;
+      max-width: 560px;
+      min-height: 720px;
+      overflow: hidden;
+      position: relative;
+      background: #fff;
+      border-radius: 30px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+      padding: 78px 36px 32px;
+    }
+
+    .top-line {
+      position: absolute;
+      inset: 0 0 auto;
+      height: 13px;
+      background: var(--blue);
+      border-bottom: 3px solid #d7e8f5;
+    }
+
+    .brand {
+      min-height: 158px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+    }
+
+    .brand img {
+      display: block;
+      max-width: 230px;
+      max-height: 125px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .logo-fallback {
+      display: none;
+      text-align: center;
+      color: var(--blue);
+    }
+
+    .logo-fallback strong {
+      display: block;
+      font-size: 34px;
+      letter-spacing: 2px;
+    }
+
+    .logo-fallback span {
+      display: block;
+      margin-top: 5px;
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: var(--muted);
+    }
+
+    .links {
+      display: grid;
+      gap: 12px;
+    }
+
+    .link-card {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 12px 16px;
+      border: 1px solid var(--line);
+      border-radius: 19px;
+      background: var(--surface);
+      color: inherit;
+      text-decoration: none;
+      box-shadow: 0 3px 9px rgba(0, 0, 0, 0.035);
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-2px);
+      border-color: #c8dbea;
+      box-shadow: 0 7px 16px rgba(23, 96, 155, 0.10);
+    }
+
+    .icon {
+      width: 46px;
+      height: 46px;
+      flex: 0 0 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      background: var(--blue);
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .icon.phone { background: #2878bd; }
+    .icon.mobile { background: #168b78; }
+    .icon.web { background: #e83b32; }
+    .icon.ho { background: #4386f5; }
+    .icon.bo { background: #7454bd; }
+
+    .link-copy {
+      min-width: 0;
+      flex: 1;
+    }
+
+    .link-copy strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .link-copy small {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.4;
+      overflow-wrap: anywhere;
+    }
+
+    .arrow {
+      color: #9aa1a9;
+      font-size: 21px;
+      padding-left: 4px;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      text-align: center;
+    }
+
+    footer strong {
+      display: block;
+      color: var(--blue-dark);
+      font-size: 14px;
+      margin-bottom: 7px;
+    }
+
+    footer span {
+      color: #9299a2;
+      font-size: 12px;
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 12px; }
+      .page-card {
+        min-height: auto;
+        padding: 58px 18px 26px;
+        border-radius: 23px;
+      }
+      .brand { min-height: 140px; margin-bottom: 15px; }
+      .link-card { min-height: 72px; padding: 10px 12px; gap: 12px; }
+      .icon { width: 43px; height: 43px; flex-basis: 43px; }
+      .link-copy strong { font-size: 14px; }
+      .link-copy small { font-size: 11px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page-card">
+    <div class="top-line"></div>
+
+    <header class="brand">
+      <!-- Upload your LSE logo to this repository and name it logo.png.
+           Or change "logo.png" below to your exact logo filename. -->
+      <img src="logo.png" alt="Lakshmi Sai Enterprises logo"
+           onerror="this.style.display='none'; document.querySelector('.logo-fallback').style.display='block';">
+      <div class="logo-fallback" aria-label="LSE Books">
+        <strong>LAKSHMI SAI</strong>
+        <span>ENTERPRISES</span>
+      </div>
+    </header>
+
+    <section class="links" aria-label="Contact information">
+      <a class="link-card" href="tel:08662414502">
+        <span class="icon phone" aria-hidden="true">☎</span>
+        <span class="link-copy">
+          <strong>Landline</strong>
+          <small>0866 - 2414502</small>
+        </span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a class="link-card" href="tel:+919440346394">
+        <span class="icon mobile" aria-hidden="true">✆</span>
+        <span class="link-copy">
+          <strong>Mobile</strong>
+          <small>94403 46394&nbsp; | &nbsp;83330 83399</small>
+        </span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a class="link-card" href="https://www.lsebooks.com/" target="_blank" rel="noopener noreferrer">
+        <span class="icon web" aria-hidden="true">◎</span>
+        <span class="link-copy">
+          <strong>Website</strong>
+          <small>www.lsebooks.com</small>
+        </span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a class="link-card" href="https://maps.app.goo.gl/c9fYTrpFHRn9QygRA?g_st=iw" target="_blank" rel="noopener noreferrer">
+        <span class="icon ho" aria-hidden="true">⌖</span>
+        <span class="link-copy">
+          <strong>HO Address</strong>
+          <small>View Head Office location on Google Maps</small>
+        </span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a class="link-card" href="https://maps.app.goo.gl/TjV4Fx72DkfqXyX1A?g_st=iw" target="_blank" rel="noopener noreferrer">
+        <span class="icon bo" aria-hidden="true">⌖</span>
+        <span class="link-copy">
+          <strong>BO Address</strong>
+          <small>Besides – View Branch Office location on Google Maps</small>
+        </span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </section>
+
+    <footer>
+      <strong>Lakshmi Sai Enterprises</strong>
+      <span>Contact • Locations • Website</span>
+    </footer>
+  </main>
+</body>
+</html>
